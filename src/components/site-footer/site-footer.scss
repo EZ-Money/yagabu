@@ -1,47 +1,46 @@
 site-footer {
   position: fixed;
+  background-color: rgba(24, 72, 24, 0.95);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0px;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(24, 72, 24, 0.95);
-  color: #dfdfd8;
   z-index: 99;
 }
 
 .site-footer {
-  padding: 10px 15px;
-  max-width: 1080px;
-  max-height: 64px;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  flex-grow: ceil($number: 1);
-  flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 
-  .footer-info-left {
+  .footer-info-right {
     vertical-align: middle;
     height: 32px;
     margin-right: 16px;
+    color: #FFFFF8;
+    white-space: nowrap;
   }
 
-  .footer-info-right {
-    margin-left: 64px;
-    vertical-align: middle;
-    height: 32px;
+  .spacer {
+    width: 4px;
   }
 
   .footer-links {
     height: 32px;
+    white-space: nowrap;
+    margin-left: 16px;
 
     a {
       color: white;
@@ -86,61 +85,7 @@ a:hover {
   text-decoration: none;
 }
 
-.pull-right {
-  order: 0;
-  flex: 1 1 auto;
-  text-align: right;
-}
 
 @media screen and (max-width: 450px) {
-  img {
-    padding-bottom: 1px;
-  }
-
-  .pull-right {
-    display: block;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 465px) {
-  .button {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 450px) {
-  .logo {
-    height: 38px;
-  }
-
-  img {
-    padding-bottom: 0px;
-    padding-top: 2px;
-  }
-}
-
-@media screen and (max-width: 722px) {
-  stencil-route-link a,
-  a {
-    font-size: 12px;
-    margin: 8px 12px;
-  }
-
-  .logo {
-    height: 32px;
-  }
-
-  .pull-right {
-    justify-content: space-around;
-    display: flex;
-  }
-
-  .site-header {
-    flex-direction: column;
-  }
-
-  stencil-route-link {
-    margin-right: unset;
-  }
+  
 }

@@ -25,7 +25,6 @@ site-header {
 
   .site-header {
     padding: 0px;
-    max-width: 1080px;
     margin: 0px;
     display: flex;
     flex-direction: row;
@@ -49,8 +48,8 @@ site-header {
     margin-right: 1.4em;
     color: #dfdfd8;
     text-decoration: none;
-    font-weight: 500;
-    letter-spacing: -0.02em;
+    font-weight: 450;
+    letter-spacing: 0.02em;
     text-decoration: none;
     transition: all 0.2s ease;
   }
@@ -95,6 +94,18 @@ site-header {
       letter-spacing: 0.04em;
       text-decoration: none;
       transition: all 0.2s ease;
+    }
+
+    stencil-route-link a:hover,
+    stencil-route-link a.link-active,
+    a:hover {
+      color: #FFFFF8 !important;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .spacer {
+      width: 100%;
     }
   }
 }
