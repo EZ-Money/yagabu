@@ -25,22 +25,23 @@ site-footer {
     -ms-flex-align: center;
     align-items: center;
 
-  .footer-info-right {
-    vertical-align: middle;
-    height: 32px;
-    margin-right: 16px;
-    color: #FFFFF8;
-    white-space: nowrap;
-  }
+    .footer-info-right {
+      vertical-align: middle;
+      height: 32px;
+      margin-right: 16px;
+      margin-top: 4px;
+      color: #FFFFF8;
+      white-space: nowrap;
+    }
 
-  .spacer {
-    width: 4px;
-  }
+    .spacer {
+      width: 40px;
+    }
 
-  .footer-links {
-    height: 32px;
-    white-space: nowrap;
-    margin-left: 16px;
+    .footer-links {
+      height: 32px;
+      white-space: nowrap;
+      margin-left: 16px;
 
     a {
       color: white;
@@ -88,4 +89,25 @@ a:hover {
 
 @media screen and (max-width: 450px) {
   
+  .site-footer {
+
+    .footer-info-right {
+      vertical-align: middle;
+      height: 24px;
+      margin-right: 8px;
+      color: #FFFFF8;
+      font-size: 12px;
+    }
+
+    .footer-links {
+      height: 24px;
+
+      a {
+        lazy-img img {
+          height: 18px;
+          width: 18px;
+        }
+      }
+    }
+  }
 }
