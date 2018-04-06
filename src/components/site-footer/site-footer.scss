@@ -1,0 +1,146 @@
+site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(24, 72, 24, 0.95);
+  color: #dfdfd8;
+  z-index: 99;
+}
+
+.site-footer {
+  padding: 10px 15px;
+  max-width: 1080px;
+  max-height: 64px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-grow: ceil($number: 1);
+  flex-wrap: nowrap;
+
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  .footer-info-left {
+    vertical-align: middle;
+    height: 32px;
+    margin-right: 16px;
+  }
+
+  .footer-info-right {
+    margin-left: 64px;
+    vertical-align: middle;
+    height: 32px;
+  }
+
+  .footer-links {
+    height: 32px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      margin-left: 12px;
+      margin-right: 12px;
+
+      lazy-img img {
+        height: 24px;
+        width: 24px;
+        &:hover {
+          -webkit-animation:spin 0.5s linear;
+          -moz-animation:spin 0.5s linear;
+          animation:spin 0.5s linear;
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+
+stencil-route-link a,
+a {
+  font-size: 18px;
+  margin: 8px 8px;
+  margin-right: 1.4em;
+  color: #dfdfd8;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+stencil-route-link a:hover,
+stencil-route-link a.link-active,
+a:hover {
+  color: #FFFFF8 !important;
+  text-decoration: none;
+}
+
+.pull-right {
+  order: 0;
+  flex: 1 1 auto;
+  text-align: right;
+}
+
+@media screen and (max-width: 450px) {
+  img {
+    padding-bottom: 1px;
+  }
+
+  .pull-right {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .logo {
+    height: 38px;
+  }
+
+  img {
+    padding-bottom: 0px;
+    padding-top: 2px;
+  }
+}
+
+@media screen and (max-width: 722px) {
+  stencil-route-link a,
+  a {
+    font-size: 12px;
+    margin: 8px 12px;
+  }
+
+  .logo {
+    height: 32px;
+  }
+
+  .pull-right {
+    justify-content: space-around;
+    display: flex;
+  }
+
+  .site-header {
+    flex-direction: column;
+  }
+
+  stencil-route-link {
+    margin-right: unset;
+  }
+}

@@ -1,25 +1,32 @@
 site-header {
   position: fixed;
+  background-color: rgba(24, 72, 24, 0.95);
+  padding: 0px;
+  margin: 0px;
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
   z-index: 99;
 
-  .logo {
-    width: 96px;
+  .logo-link a {
+    margin: 0px;
   }
 
-  .logo-link a {
-    margin: 0;
+  .logo {
+    background: url("/assets/img/yagabuLogoWhite48x140.png");
+    background-size: contain;
+    height: 48px;
+    width: 140px;
+    padding: 0px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    margin-top: 8px;
   }
-  
+
   .site-header {
-    padding: 20px 15px;
+    padding: 0px;
     max-width: 1080px;
-    margin: auto;
+    margin: 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -35,69 +42,59 @@ site-header {
     align-items: center;
   }
 
-  stencil-route-link a, a {
-    font-size: 14px;
+  stencil-route-link a,
+  a {
+    font-size: 18px;
     margin: 8px 8px;
     margin-right: 1.4em;
-    color: #86869c;
+    color: #dfdfd8;
     text-decoration: none;
     font-weight: 500;
     letter-spacing: -0.02em;
     text-decoration: none;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
   }
 
-  stencil-route-link a:hover, stencil-route-link a.link-active, a:hover {
-    color: #2b2b38 !important;
+  .noWrapLink
+  {
+    white-space: nowrap;
+  }
+
+  stencil-route-link a:hover,
+  stencil-route-link a.link-active,
+  a:hover {
+    color: #FFFFF8 !important;
     text-decoration: none;
   }
 
-  .pull-right {
-    order: 0;
-    flex: 1 1 auto;
-    text-align: right;
+  .spacer {
+    width: 100%;
   }
 
   @media screen and (max-width: 450px) {
-    img {
-      padding-bottom: 20px;
-    }
-    .pull-right {
-      display: block;
-      text-align: center;
-    }
 
-  }
-
-  @media screen and (max-width: 465px) {
-    .button {
-      display: none;
-    }
-  }
-  
-  @media screen and (min-width: 450px) {
     .logo {
-      height: 27px;
-    }
-  }
-  
-  @media screen and (max-width: 722px) {
-    stencil-route-link a, a {
-      font-size: 12px;
-      margin: 8px 12px;
-    }
-
-    .pull-right {
-      justify-content: space-around;
-      display: flex;
+      background: url("/assets/img/yagabuLogoWhite48x48.png");
+      background-size: contain;
+      height: 32px;
+      width: 32px;
+      padding: 0px;
+      margin-left: 16px;
+      margin-bottom: 8px;
+      margin-top: 8px;
     }
 
-    .site-header {
-      flex-direction: column;
-    }
-  
-    stencil-route-link {
-      margin-right: unset;
+    stencil-route-link a,
+    a {
+      font-size: 14px;
+      margin: 2px 2px;
+      margin-right: 1.4em;
+      color: #dfdfd8;
+      text-decoration: none;
+      font-weight: 300;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      transition: all 0.2s ease;
     }
   }
 }

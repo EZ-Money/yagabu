@@ -1,4 +1,4 @@
-import { Component, Element, Prop } from '@stencil/core';
+import { Component, Element } from '@stencil/core';
 
 
 @Component({
@@ -9,10 +9,8 @@ export class LandingPage {
 
   @Element() el: Element;
 
-  @Prop({ context: 'isServer' }) private isServer: boolean;
-
   constructor() {
-    document.title = `Stencil`;
+    document.title = `Yagabu`;
   }
 
   componentDidLoad() {
@@ -46,74 +44,56 @@ export class LandingPage {
 
   render() {
     return (
+      
       <div>
 
-        <div onClick={() => { this.closeBackground() }} id="background">
-        </div>
-
-        {!this.isServer && window.matchMedia('(min-width: 740px)').matches ? <div id="youtube-video" onClick={() => { this.closeBackground() }}>
-          <lazy-iframe src="https://www.youtube.com/embed/UfD-k7aHkQE" width="700" height="450" title="Ionic team at Polymer Summit video" />
-        </div>: null}
-
-        <main>
-          <img id="logo" src="/assets/img/logo.png" alt="Stencil Logo"></img>
-
-          <h1 id="action-call">The magical, reusable web component compiler</h1>
-
+        <main id="main-div">
+        
+          <span id="titleSpan">Golf: Organized</span>
+          <span id="action-two">Tools For Your Tournament</span>
+          
           <section id="buttons">
-
-            <stencil-route-link url="/docs/getting-started">
-              <button id="get-started">
-                Get Started
-            </button>
-            </stencil-route-link>
-
             <stencil-route-link url="/docs/intro">
               <button id="learn-more">
                 Learn More
-          </button>
+              </button>
             </stencil-route-link>
-
-            <div onClick={() => { this.openYoutube() }} id="launch-video">
-              <img src="/assets/img/video-icon.png" alt="Icon for Video"></img><span>Watch launch video</span>
-            </div>
-
-            <a href="https://youtu.be/UfD-k7aHkQE" rel="noopener" id="mobile-video">
-              <img src="/assets/img/video-icon.png" alt="Icon for video link"></img><span>Watch launch video</span>
-            </a>
           </section>
+
         </main>
 
-        <section id="three-points">
-          <div class="point-card simple">
-            <h2>Simple</h2>
+      <h1 class="section-title">Portfolio</h1>,
+      <my-projects></my-projects>
 
-            <p>
-              With intentionally small tooling,
-                a tiny API, zero configuration, and
-                TypeScript support, you're set.
-              </p>
+        <h1 class="section-title">Example Timeline</h1>
+        <my-experience></my-experience>
+
+        <h1 class="section-title">Hobbies</h1>
+        <my-hobbies></my-hobbies> 
+
+        <section id="buttons">
+
+          <stencil-route-link url="/docs/getting-started">
+            <button id="get-started">
+              Get Started
+          </button>
+          </stencil-route-link>
+
+          <stencil-route-link url="/docs/intro">
+            <button id="learn-more">
+              Learn More
+          </button>
+          </stencil-route-link>
+
+          <div onClick={() => { this.openYoutube() }} id="launch-video">
+            <img src="/assets/img/video-icon.png" alt="Icon for Video"></img><span>Watch launch video</span>
           </div>
 
-          <div class="point-card performant">
-            <h2>Performant</h2>
-
-            <p>
-              6kb min+gzip runtime, server side rendering,
-                and the raw power of native Web Components.
-              </p>
-          </div>
-
-          <div class="point-card future-proof">
-            <h2>Future proof</h2>
-
-            <p>
-              Build versatile apps and components based 100%
-                on web standards. Break free of Framework Churn.
-              </p>
-          </div>
+          <a href="https://youtu.be/UfD-k7aHkQE" rel="noopener" id="mobile-video">
+            <img src="/assets/img/video-icon.png" alt="Icon for video link"></img><span>Watch launch video</span>
+          </a>
         </section>
-
+        
       </div>
     );
   }

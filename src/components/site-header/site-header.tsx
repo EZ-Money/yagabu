@@ -5,29 +5,29 @@ import { Component } from '@stencil/core';
   styleUrl: 'site-header.scss'
 })
 export class SiteHeader {
+  // yagabuLogoWhite48x48 yagabuLogoWhite48x140
   render() {
     return (
       <div class="site-header">
+        
         <stencil-route-link url="/" class="logo-link">
-          <img class="logo" alt="Stencil" src="/assets/img/stencil-logo-new.svg" />
+          <div class="logo"></div>
         </stencil-route-link>
-        <div class="pull-right">
-          <stencil-route-link urlMatch="/docs" url="/docs/intro">
-            Docs
-          </stencil-route-link>
-          <stencil-route-link url="/demos"  exact={true}>
-            Demos
-          </stencil-route-link>
-          <stencil-route-link url="/pwa" exact={true}>
-            PWAs
-          </stencil-route-link>
-          <stencil-route-link url="/resources"  exact={true}>
-            Resources
-          </stencil-route-link>
-          <a href="https://github.com/ionic-team/stencil">
-            GitHub
-          </a>
-        </div>
+
+        <div class="spacer"/>
+
+        <stencil-route-link class="noWrapLink" urlMatch="/docs" url="/docs/intro">
+          Features
+        </stencil-route-link>
+
+        <stencil-route-link class="noWrapLink" url="/resources"  exact={true}>
+          Mobile
+        </stencil-route-link>
+
+        <stencil-route-link class="noWrapLink" url="/pwa" exact={true}>
+          Sign-In
+        </stencil-route-link>
+
       </div>
     );
   }

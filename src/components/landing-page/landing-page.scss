@@ -1,23 +1,49 @@
 landing-page {
+  
   main {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 10em;
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+
+  #main-div
+  {
+    // background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) ), url('/assets/img/AdobeStock_52396128-1080x720.jpeg');
+    background-position: center;
+    background-size: cover; 
+    margin-top: 60px;
   }
 
   #logo {
-    width: 4em;
-    height: 4em;
+    width: 32px;
+    height: 32px;
   }
 
-  #action-call {
-    font-size: 3.2em;
-    text-align: center;
-    width: 16em;
+  #action-three {
+    font-size: 48px;
     line-height: normal;
-    margin-top: 20px;
+    color: rgba(24, 72, 24, 1);
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
+
+  #action-two {
+    margin-bottom: 0px;
+    font-size: 48px;
+    line-height: normal;
+    color: rgba(0, 48, 0, 1);
+  }
+
+  #titleSpan {
+    font-weight: bolder;
+    line-height: normal;
+    margin-top: 1.1em;
+    margin-bottom: 0px;
+    font-size: 5em;
+    color: rgba(0, 48, 0, 1);
   }
 
   button {
@@ -46,8 +72,9 @@ landing-page {
   }
 
   #learn-more {
-    background: white;
-    color: var(--primary-color);
+    color: #FFFFF8;
+    background: rgba(24, 72, 24, 1);
+    margin-top: 40px;
   }
 
   #youtube-video {
@@ -84,8 +111,8 @@ landing-page {
     right: 0;
     opacity: 0;
     pointer-events: none;
-    background-color: #00082d;
     transition: opacity 0.3s cubic-bezier(0.36,0.66,0.04,1);
+    src: "/assets/img/AdobeStock_52396128-1080x720.jpeg";
   }
 
   .background-show {
