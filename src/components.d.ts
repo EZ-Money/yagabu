@@ -290,26 +290,26 @@ declare global {
 
 
 declare global {
-  interface HTMLMyProjectsElement extends HTMLStencilElement {
+  interface HTMLMainFeatureCardsElement extends HTMLStencilElement {
 
   }
-  var HTMLMyProjectsElement: {
-    prototype: HTMLMyProjectsElement;
-    new (): HTMLMyProjectsElement;
+  var HTMLMainFeatureCardsElement: {
+    prototype: HTMLMainFeatureCardsElement;
+    new (): HTMLMainFeatureCardsElement;
   };
   interface HTMLElementTagNameMap {
-    'my-projects': HTMLMyProjectsElement;
+    'main-feature-cards': HTMLMainFeatureCardsElement;
   }
   interface ElementTagNameMap {
-    'my-projects': HTMLMyProjectsElement;
+    'main-feature-cards': HTMLMainFeatureCardsElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'my-projects': JSXElements.MyProjectsAttributes;
+      'main-feature-cards': JSXElements.MainFeatureCardsAttributes;
     }
   }
   namespace JSXElements {
-    export interface MyProjectsAttributes extends HTMLAttributes {
+    export interface MainFeatureCardsAttributes extends HTMLAttributes {
 
     }
   }

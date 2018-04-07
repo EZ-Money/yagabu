@@ -1,4 +1,5 @@
 import { Component, Prop } from "@stencil/core";
+//import { BackButton } from "@ionic/core";
 
 @Component({
   tag: "single-project",
@@ -13,29 +14,18 @@ export class SingleProject {
       this.project.tags.forEach(tag => {
         tags.push(<tech-chip tag={tag} />);
       });
+      
       return (
         <div class="card">
-          <div class="container">
-            <div class="title">
-              <h2>{this.project.title}</h2>
-              <div class="emptySpace"> </div>
-              <div class="code">
-                <label>Code</label>
-                <a
-                  target="_blank"
-                  href={this.project.more}
-                  rel="noopener"
-                  title="This link opens my project code in a new tab."
-                >
-                  <lazy-img src="../assets/logo-github-2.svg" alt="Github" />
-                </a>
-              </div>
-            </div>
-            <div class="description">
-              <p>{this.project.description}</p>
-            </div>
-            <div class="tags">{tags}</div>
+          <lazy-img class="cardBackground" src={this.project.background} alt={this.project.alt} />
+          <div class="title">
+            <div class="titleText">{this.project.title}</div>
+            <div class="emptySpace"> </div>
+           </div>
+          <div class="description">
+            <p>{this.project.description}</p>
           </div>
+          <div class="tags">{tags}</div>
         </div>
       );
     }

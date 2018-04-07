@@ -1,6 +1,9 @@
-my-projects {
-    .my-projects-container {
+main-feature-cards {
+    .main-feature-cards-container {
       display: grid;
+      //background: url("/assets/img/fairwayGrass.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
       padding: 25px 25px 25px 25px;
       grid-template-columns: 1fr;
       grid-column-gap: 10px;

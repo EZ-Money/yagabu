@@ -65,7 +65,7 @@ export class LazyImg {
 
   render() {
     return (
-      <img data-src={this.src} alt={this.alt}></img>
+      <img data-src={this.src} alt={this.alt} ></img>
     );
   }
 }

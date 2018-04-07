@@ -1,3 +1,4 @@
+import "@ionic/core";
 import { Component, Element } from '@stencil/core';
 
 
@@ -5,7 +6,7 @@ import { Component, Element } from '@stencil/core';
   tag: 'landing-page',
   styleUrl: 'landing-page.scss'
 })
-export class LandingPage {
+export class LandingPage { 
 
   @Element() el: Element;
 
@@ -18,7 +19,8 @@ export class LandingPage {
     // dont show the animated youtube video in Edge because
     // pointer-events: none; is broken in Edge
     // just link to the youtube video directly like we do on mobile
-    if ((document as any).documentMode || /Edge/.test(navigator.userAgent)) {
+    if ((document as any).documentMode || /Edge/.test(navigator.userAgent)) 
+    {
       (this.el.querySelector('#youtube-video') as HTMLElement).style.display = 'none';
       (this.el.querySelector('#launch-video') as HTMLElement).style.display = 'none';
       (this.el.querySelector('#background') as HTMLElement).style.display = 'none';
@@ -49,23 +51,15 @@ export class LandingPage {
 
         <main id="main-div">
         
-          <span id="titleSpan">Golf: Organized</span>
-          <span id="action-two">Tools For Your Tournament</span>
-          
-          <section id="buttons">
-            <stencil-route-link url="/docs/intro">
-              <button id="learn-more">
-                Learn More
-              </button>
-            </stencil-route-link>
-          </section>
-
+          <span id="headline-1">Golf: Organized</span>
+          <span id="headline-2">Tools For Your Tournament</span>
+          <span id="headline-3">Organizing your golf event is painful. Yagabu provides a complete set of online tools to make it much easier.</span>
         </main>
 
-      <h1 class="section-title">Portfolio</h1>,
-      <my-projects></my-projects>
+        <main-feature-cards/>
 
         <h1 class="section-title">Example Timeline</h1>
+
         <my-experience></my-experience>
 
         <h1 class="section-title">Hobbies</h1>
