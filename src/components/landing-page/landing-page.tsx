@@ -53,7 +53,8 @@ export class LandingPage {
         
           <span id="headline-1">Golf: Organized</span>
           <span id="headline-2">Tools For Your Tournament</span>
-          <span id="headline-3">Organizing your golf event is painful. Yagabu provides a complete set of online tools to make it much easier.</span>
+          <span id="headline-3">Organizing your golf event can be painful. Yagabu provides a complete set of online tools to make it much easier.</span>
+        
         </main>
 
         <main-feature-cards/>

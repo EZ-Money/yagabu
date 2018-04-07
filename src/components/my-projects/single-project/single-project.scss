@@ -1,6 +1,7 @@
 single-project {
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: 300px;
 
     .cardBackground {
         img {
@@ -18,6 +19,7 @@ single-project {
     .card {
         height: 100%;
         width: 100%;
+        min-width: 240px;
         box-shadow: 6px 8px 8px 0 rgba(0,0,0,0.2);
         border: 1px solid #e0e0e0;
         transition: 0.3s;
@@ -26,9 +28,9 @@ single-project {
         .title {
             width: 100%;
             margin: 4px;
+            margin-top: 10px;
             padding: 0px;
             display: flex;
-            
             justify-content: center;
 
             .titleText {
@@ -55,19 +57,21 @@ single-project {
             }
         }
 
+        .description {
+            min-height: 160px;
+            margin-top: 8px;
+            margin-left: 12px;
+            margin-right: 12px;
+            font-size: 16px;
+
+        }
+
         .container {
             padding: 0px;
             margin: 0px;
             cursor: default;
 
             
-            .description {
-                min-height: 60px;
-                p {
-                    line-height: 18px;
-                    font-size: 16px;
-                }
-            }
             .tags {
                 white-space: nowrap;
                 margin-bottom: 5px;

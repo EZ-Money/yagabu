@@ -8,9 +8,9 @@ export class MyProjects {
   @State()
   projects: any = [
     {
-      title: "Who, When, Where, How",
+      title: "Who, When, Where",
       description:
-        "A new simple way to organize your pantry from your mobile device.",
+        "Dates, invites, travel, round information, scoring, betting...  Just a few things Yagabu will help you with.",
       tags: ["Angular", "Ionic", "Firebase"],
       more: "https://github.com/Fdom92/Pantrify",
       background: "/assets/img/FourCarts300x200.png",
@@ -19,7 +19,7 @@ export class MyProjects {
     {
       title: "Manage Games",
       description:
-        "My personal web site was also made using just Stencil, it is also a PWA.",
+        "Club tournaments, weekly games, year long point races.  We can help manage it all, and provide an online scoreboard for your group to enjoy.",
       tags: ["Stenciljs", "PWA"],
       more: "https://github.com/Fdom92/personal-web-site", 
       background: "/assets/img/ScoreCardAndBall300x200.png",
@@ -27,7 +27,7 @@ export class MyProjects {
     },
     {
       title: "Have More Fun",
-      description: "A PWA to search information about your favorites animes",
+      description: "Yagabu provides real-time updates before, during, and after your game. Everyone can share their antics as they happen.",
       tags: ["Stenciljs", "PWA"],
       more: "https://github.com/Fdom92/anidb",
       background: "/assets/img/BetsAndBooze300x200.png",

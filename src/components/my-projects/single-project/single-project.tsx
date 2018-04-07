@@ -23,7 +23,7 @@ export class SingleProject {
             <div class="emptySpace"> </div>
            </div>
           <div class="description">
-            <p>{this.project.description}</p>
+            {this.project.description}
           </div>
           <div class="tags">{tags}</div>
         </div>

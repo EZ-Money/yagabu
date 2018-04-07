@@ -208,9 +208,27 @@ landing-page {
     display: none;
   }
 
+  @media screen and (max-width: 860px) {
+
+    #headline-3 {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+  }
+
   @media screen and (max-width: 450px) {
 
-    #titleSpan {
+    #main-div
+    {
+      // background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) ), url('/assets/img/AdobeStock_52396128-1080x720.jpeg');
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    #headline-1 {
       font-weight: bolder;
       line-height: normal;
       margin-top: 1.1em;
@@ -219,17 +237,35 @@ landing-page {
       color: rgba(0, 48, 0, 1);
     }
 
-    #action-two {
+    #headline-2 {
       margin-bottom: 0px;
       font-size: 1.4em;
       line-height: normal;
       color: rgba(0, 48, 0, 1);
     }
+
+     #headline-3 {
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      font-size: 1.0em;
+      line-height: normal;
+      color: rgba(0, 48, 0, 1);     
+    }
   }
 
   @media screen and (max-width: 320px) {
 
-    #titleSpan {
+    #main-div
+    {
+      // background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) ), url('/assets/img/AdobeStock_52396128-1080x720.jpeg');
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+
+    #headline-1 {
       font-weight: bolder;
       line-height: normal;
       margin-top: 1.1em;
@@ -238,11 +274,20 @@ landing-page {
       color: rgba(0, 48, 0, 1);
     }
 
-    #action-two {
+    #headline-2 {
       margin-bottom: 0px;
       font-size: 1.4em;
       line-height: normal;
       color: rgba(0, 48, 0, 1);
     }
+
+    #headline-3 {
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 0.8em;
+        line-height: normal;
+        color: rgba(0, 48, 0, 1);     
+      }
   }
 }
