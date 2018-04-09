@@ -1,16 +1,61 @@
-tech-chip {
-  .chip {
-    display: inline-block;
-    padding: 4px 4px;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-radius: 16px;
-    background-color: #e6e6e6;
-    height: 32px;
-    cursor: default;
-    p {
-      margin-top: -2px;
-      font-size: 12px;
+tech-chip { 
+  padding: 0px;
+  margin: 0px;
+
+  .routeLink {
+    padding: 8px;
+    margin: 0px;
+
+    a {
+      padding: 0px;
+      margin: 0px;
+
+      .tagText {
+        display: inline;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 0px;
+        font-size: 12px;
+        color: #004800;
+        text-transform: uppercase;
+      }       
     }
+
+    a:hover, a.link-active {
+      .tagText {
+        display: inline;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 0px;
+        font-size: 14px;
+        color: #000000;
+        text-transform: uppercase;
+        transition: all .15s ease;
+      }       
+    }
+
+  }
+  
+
+  .tagBtnList {
+     border: none;
+    
+    border-radius: 8px;
+    box-shadow: var(--button-shadow);
+    outline: none;
+    transition: all .15s ease;
+    cursor: pointer;
+  }
+
+
+  .tagBtnList:hover {
+    box-shadow: var(--button-shadow-hover);
+    transform: translateY(3px);
+  }
+
+  .chip {
+    padding: 4px 4px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 }

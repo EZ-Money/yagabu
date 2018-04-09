@@ -14,17 +14,17 @@
   },
   "dependencies": {
     "@ionic/core": "0.2.2",
-    "@stencil/core": "0.7.17",
-    "@stencil/router": "0.0.25",
-    "@stencil/sass": "0.0.2",
+    "@stencil/core": "0.7.18",
+    "@stencil/router": "0.0.28",
+    "@stencil/sass": "0.0.3",
     "npm": "^5.8.0"
   },
   "devDependencies": {
     "@stencil/dev-server": "0.0.18-0",
     "@stencil/utils": "latest",
-    "gh-pages": "^1.0.0",
+    "gh-pages": "^1.1.0",
     "gulp": "^3.9.1",
-    "gulp-markdown": "^1.2.0",
+    "gulp-markdown": "^2.0.1",
     "highlight.js": "^9.12.0"
   },
   "author": "Ionic Team",

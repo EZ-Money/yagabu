@@ -58,30 +58,25 @@ single-project {
         }
 
         .description {
-            min-height: 160px;
+            height: 100px;
             margin-top: 8px;
             margin-left: 12px;
             margin-right: 12px;
             font-size: 16px;
-
         }
 
-        .container {
+        .tagList {
+            width: 100%;
+            white-space: nowrap;
+            margin-top: 0px;
+            margin-bottom: 8px;
+            margin-right: 0px;
+            margin-left: 0px;
             padding: 0px;
-            margin: 0px;
-            cursor: default;
-
-            
-            .tags {
-                white-space: nowrap;
-                margin-bottom: 5px;
-                margin-top: 5px;
-
-                tech-chip {
-                    padding-right: 5px;
-                }
-            }
+            display: flex;
+            justify-content: center;
         }
+
         &:hover {
             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
             transform: translateY(-5px);

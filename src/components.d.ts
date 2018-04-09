@@ -345,6 +345,7 @@ declare global {
 
 declare global {
   interface HTMLTechChipElement extends HTMLStencilElement {
+    'link': any;
     'tag': any;
   }
   var HTMLTechChipElement: {
@@ -364,6 +365,7 @@ declare global {
   }
   namespace JSXElements {
     export interface TechChipAttributes extends HTMLAttributes {
+      'link'?: any;
       'tag'?: any;
     }
   }

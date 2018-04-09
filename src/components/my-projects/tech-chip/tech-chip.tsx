@@ -7,12 +7,13 @@ import { Component, Prop } from '@stencil/core';
 export class TechChip {
 
   @Prop() tag;
+  @Prop() link;
 
   render() {
     return (
-      <div class="chip">
-        <p>{this.tag}</p>
-      </div>
+      <stencil-route-link class="routeLink" url={this.link}>
+        <div class="tagText">{this.tag}</div>
+      </stencil-route-link>
     );
   }
 }

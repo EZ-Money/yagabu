@@ -12,7 +12,9 @@ export class SingleProject {
     if (this.project) {
       let tags = [];
       this.project.tags.forEach(tag => {
-        tags.push(<tech-chip tag={tag} />);
+        //let props = {tag};
+
+        tags.push(<tech-chip tag={tag[0]} link={tag[1]}/>);
       });
       
       return (
@@ -25,7 +27,7 @@ export class SingleProject {
           <div class="description">
             {this.project.description}
           </div>
-          <div class="tags">{tags}</div>
+          <div class="tagList">{tags}</div>
         </div>
       );
     }
