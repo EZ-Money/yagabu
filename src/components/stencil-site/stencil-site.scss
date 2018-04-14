@@ -26,6 +26,7 @@ stencil-site {
   flex-grow: 1;
   flex-shrink: 0;
   background-color: #FFFFF8;
+  height: 100%;
 }
 
 ::selection {
@@ -292,12 +293,9 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
+  
   .wrapper {
     padding-top: 80px;
-  }
-
-  site-header a {
-    display: none;
   }
 
   site-header stencil-route-link a {

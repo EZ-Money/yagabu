@@ -508,6 +508,114 @@ declare global {
 
 
 declare global {
+  interface HTMLFeatureMessagingComponentElement extends HTMLStencilElement {
+
+  }
+  var HTMLFeatureMessagingComponentElement: {
+    prototype: HTMLFeatureMessagingComponentElement;
+    new (): HTMLFeatureMessagingComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'feature-messaging-component': HTMLFeatureMessagingComponentElement;
+  }
+  interface ElementTagNameMap {
+    'feature-messaging-component': HTMLFeatureMessagingComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'feature-messaging-component': JSXElements.FeatureMessagingComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface FeatureMessagingComponentAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLFeatureMobileComponentElement extends HTMLStencilElement {
+
+  }
+  var HTMLFeatureMobileComponentElement: {
+    prototype: HTMLFeatureMobileComponentElement;
+    new (): HTMLFeatureMobileComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'feature-mobile-component': HTMLFeatureMobileComponentElement;
+  }
+  interface ElementTagNameMap {
+    'feature-mobile-component': HTMLFeatureMobileComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'feature-mobile-component': JSXElements.FeatureMobileComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface FeatureMobileComponentAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLFeatureNotificationsComponentElement extends HTMLStencilElement {
+
+  }
+  var HTMLFeatureNotificationsComponentElement: {
+    prototype: HTMLFeatureNotificationsComponentElement;
+    new (): HTMLFeatureNotificationsComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'feature-notifications-component': HTMLFeatureNotificationsComponentElement;
+  }
+  interface ElementTagNameMap {
+    'feature-notifications-component': HTMLFeatureNotificationsComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'feature-notifications-component': JSXElements.FeatureNotificationsComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface FeatureNotificationsComponentAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLFeatureScoreboardComponentElement extends HTMLStencilElement {
+
+  }
+  var HTMLFeatureScoreboardComponentElement: {
+    prototype: HTMLFeatureScoreboardComponentElement;
+    new (): HTMLFeatureScoreboardComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'feature-scoreboard-component': HTMLFeatureScoreboardComponentElement;
+  }
+  interface ElementTagNameMap {
+    'feature-scoreboard-component': HTMLFeatureScoreboardComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'feature-scoreboard-component': JSXElements.FeatureScoreboardComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface FeatureScoreboardComponentAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
   interface HTMLSiteFeaturesElement extends HTMLStencilElement {
 
   }

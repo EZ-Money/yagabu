@@ -1,15 +1,4 @@
 site-footer {
-  // background-color: rgba(24, 72, 24, 0.95);
-  // left: 0;
-  // right: 0;
-  // z-index: 99;
-  // position: fixed;
-  // padding-top: 8px;
-  // padding-bottom: 8px;
-  // margin: 0px;
-  // bottom: 0;
-  // left: 0;
-  // right: 0;
 
   .site-footer {
     display: flex;
@@ -17,7 +6,7 @@ site-footer {
     flex-wrap: nowrap;
     background-color: rgba(24, 72, 24, 0.95);
     padding-top: 10px;
-    
+
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;

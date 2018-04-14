@@ -10,10 +10,13 @@ import { Component } from "@stencil/core";
 export class App {
   render() {
     return [
+      
       <div id="main-div">
+       
         <site-header />
 
         <div class="app">
+        
           <stencil-router>
             
             <stencil-route url="/" component="landing-page" exact={true} />
@@ -23,14 +26,16 @@ export class App {
             <stencil-route url="/features/datePoll" component="feature-date-poll-component" exact={true} />
             <stencil-route url="/features/games" component="feature-games-component" exact={true} />
             <stencil-route url="/features/itinerary" component="feature-itinerary-component" exact={true} />
-            <stencil-route url="/features/notifications" component="feature-Notifications" exact={true} />
-            <stencil-route url="/features/scoreboards" component="feature-Scoreboards" exact={true} />
+            <stencil-route url="/features/notifications" component="feature-notifications-component" exact={true} />
+            <stencil-route url="/features/scoreboards" component="feature-scoreboard-component" exact={true} />
             <stencil-route url="/features/tournaments" component="feature-tournaments-component" exact={true} />
             <stencil-route url="/features/travel" component="feature-travel-component" exact={true} />
+            <stencil-route url="/features/mobile" component="feature-mobile-component" exact={true} />
+            <stencil-route url="/features/messaging" component="feature-messaging-component" exact={true} />
 
             {/*Has a left menu*/}
-            <stencil-route
-              url={["/docs", "/demos", "/resources", "/pwa"]}
+            
+            <stencil-route url={["/docs", "/demos", "/resources", "/pwa"]}
               routeRender={() => {
                 return (
                   <div class="wrapper">

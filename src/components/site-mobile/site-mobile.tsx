@@ -12,7 +12,7 @@ export class siteMobile {
 
   render() {
     return (
-      <div class="siteMobile">
+      <div class="tcDivClass">
         <p>Yababu Mobile</p>
         <img src="/assets/img/UnderConstruction.png" />
       </div>

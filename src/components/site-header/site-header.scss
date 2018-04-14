@@ -7,6 +7,7 @@ site-header {
   left: 0;
   right: 0;
   z-index: 99;
+  width: 100%;
 
   .logo-link a {
     margin: 0px;
@@ -39,9 +40,14 @@ site-header {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+
+    a
+    {
+      white-space: nowrap;
+    }
+
   }
 
-  stencil-route-link a,
   a {
     font-size: 18px;
     margin: 8px 8px;
@@ -72,6 +78,15 @@ site-header {
 
   @media screen and (max-width: 450px) {
 
+    .site-header
+    {
+      .headerAnchor
+      {
+        display: flex;
+        justify-content: center;    
+      }
+    }
+
     .logo {
       background: url("/assets/img/yagabuLogoWhite48x48.png");
       background-size: contain;
@@ -83,14 +98,13 @@ site-header {
       margin-top: 8px;
     }
 
-    stencil-route-link a,
     a {
-      font-size: 14px;
+      font-size: 17px;
+      font-weight: 400;
       margin: 2px 2px;
       margin-right: 1.4em;
       color: #dfdfd8;
       text-decoration: none;
-      font-weight: 300;
       letter-spacing: 0.04em;
       text-decoration: none;
       transition: all 0.2s ease;

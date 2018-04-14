@@ -24,9 +24,10 @@ export class SiteHeader {
           Mobile
         </stencil-route-link>
 
-        <stencil-route-link class="noWrapLink" url="/pwa" exact={true}>
+        {/*Go to the app*/}
+        <a class="headerAnchor" href="https://yagabu.com/appHome">
           Sign-In
-        </stencil-route-link>
+        </a>
 
       </div>
     );

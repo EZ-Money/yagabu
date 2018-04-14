@@ -12,7 +12,7 @@ export class siteFeatures {
 
   render() {
     return (
-      <div class="siteFeatures">
+      <div class="tcDivClass">
         <p>Yababu Features</p>
         <img src="/assets/img/UnderConstruction.png" />
       </div>

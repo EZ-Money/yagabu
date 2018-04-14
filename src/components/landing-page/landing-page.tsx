@@ -58,8 +58,9 @@ export class LandingPage {
         </main>
 
         <main-feature-cards/>
-
+        
         {/*
+
         <h1 class="section-title">Example Timeline</h1>
 
         <my-experience></my-experience>
