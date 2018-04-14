@@ -11,9 +11,11 @@ export class TechChip {
 
   render() {
     return (
-      <stencil-route-link class="routeLink" url={this.link}>
+
+      <stencil-route-link class="noWrapLink" url={this.link} exact={true}>
         <div class="tagText">{this.tag}</div>
       </stencil-route-link>
+
     );
   }
 }

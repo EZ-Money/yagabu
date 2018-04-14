@@ -59,6 +59,7 @@ export class LandingPage {
 
         <main-feature-cards/>
 
+        {/*
         <h1 class="section-title">Example Timeline</h1>
 
         <my-experience></my-experience>
@@ -88,6 +89,7 @@ export class LandingPage {
             <img src="/assets/img/video-icon.png" alt="Icon for video link"></img><span>Watch launch video</span>
           </a>
         </section>
+        */}
         
       </div>
     );

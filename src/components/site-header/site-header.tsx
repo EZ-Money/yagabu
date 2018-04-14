@@ -16,11 +16,11 @@ export class SiteHeader {
 
         <div class="spacer"/>
 
-        <stencil-route-link class="noWrapLink" urlMatch="/docs" url="/docs/intro">
+        <stencil-route-link class="noWrapLink" url="/features" exact={true}>
           Features
         </stencil-route-link>
 
-        <stencil-route-link class="noWrapLink" url="/resources"  exact={true}>
+        <stencil-route-link class="noWrapLink" url="/mobile"  exact={true}>
           Mobile
         </stencil-route-link>
 

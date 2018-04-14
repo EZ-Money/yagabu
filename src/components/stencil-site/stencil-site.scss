@@ -14,6 +14,14 @@ stencil-site {
   margin: auto;
 }
 
+.footerSpacer {
+  height: 48px;
+}
+
+.footerSpacerBottom {
+  height: 2px;
+}
+
 #main-div {
   flex-grow: 1;
   flex-shrink: 0;

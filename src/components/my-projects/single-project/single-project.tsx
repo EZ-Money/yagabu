@@ -12,8 +12,6 @@ export class SingleProject {
     if (this.project) {
       let tags = [];
       this.project.tags.forEach(tag => {
-        //let props = {tag};
-
         tags.push(<tech-chip tag={tag[0]} link={tag[1]}/>);
       });
       

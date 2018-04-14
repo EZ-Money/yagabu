@@ -427,6 +427,195 @@ declare global {
 
 
 declare global {
+  interface HTMLFeatureDatePollComponentElement extends HTMLStencilElement {
+
+  }
+  var HTMLFeatureDatePollComponentElement: {
+    prototype: HTMLFeatureDatePollComponentElement;
+    new (): HTMLFeatureDatePollComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'feature-date-poll-component': HTMLFeatureDatePollComponentElement;
+  }
+  interface ElementTagNameMap {
+    'feature-date-poll-component': HTMLFeatureDatePollComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'feature-date-poll-component': JSXElements.FeatureDatePollComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface FeatureDatePollComponentAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLFeatureGamesComponentElement extends HTMLStencilElement {
+
+  }
+  var HTMLFeatureGamesComponentElement: {
+    prototype: HTMLFeatureGamesComponentElement;
+    new (): HTMLFeatureGamesComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'feature-games-component': HTMLFeatureGamesComponentElement;
+  }
+  interface ElementTagNameMap {
+    'feature-games-component': HTMLFeatureGamesComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'feature-games-component': JSXElements.FeatureGamesComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface FeatureGamesComponentAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLFeatureItineraryComponentElement extends HTMLStencilElement {
+
+  }
+  var HTMLFeatureItineraryComponentElement: {
+    prototype: HTMLFeatureItineraryComponentElement;
+    new (): HTMLFeatureItineraryComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'feature-itinerary-component': HTMLFeatureItineraryComponentElement;
+  }
+  interface ElementTagNameMap {
+    'feature-itinerary-component': HTMLFeatureItineraryComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'feature-itinerary-component': JSXElements.FeatureItineraryComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface FeatureItineraryComponentAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLSiteFeaturesElement extends HTMLStencilElement {
+
+  }
+  var HTMLSiteFeaturesElement: {
+    prototype: HTMLSiteFeaturesElement;
+    new (): HTMLSiteFeaturesElement;
+  };
+  interface HTMLElementTagNameMap {
+    'site-features': HTMLSiteFeaturesElement;
+  }
+  interface ElementTagNameMap {
+    'site-features': HTMLSiteFeaturesElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'site-features': JSXElements.SiteFeaturesAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface SiteFeaturesAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLTestComponentElement extends HTMLStencilElement {
+
+  }
+  var HTMLTestComponentElement: {
+    prototype: HTMLTestComponentElement;
+    new (): HTMLTestComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'test-component': HTMLTestComponentElement;
+  }
+  interface ElementTagNameMap {
+    'test-component': HTMLTestComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'test-component': JSXElements.TestComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TestComponentAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLFeatureTournamentsComponentElement extends HTMLStencilElement {
+
+  }
+  var HTMLFeatureTournamentsComponentElement: {
+    prototype: HTMLFeatureTournamentsComponentElement;
+    new (): HTMLFeatureTournamentsComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'feature-tournaments-component': HTMLFeatureTournamentsComponentElement;
+  }
+  interface ElementTagNameMap {
+    'feature-tournaments-component': HTMLFeatureTournamentsComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'feature-tournaments-component': JSXElements.FeatureTournamentsComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface FeatureTournamentsComponentAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLFeatureTravelComponentElement extends HTMLStencilElement {
+
+  }
+  var HTMLFeatureTravelComponentElement: {
+    prototype: HTMLFeatureTravelComponentElement;
+    new (): HTMLFeatureTravelComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'feature-travel-component': HTMLFeatureTravelComponentElement;
+  }
+  interface ElementTagNameMap {
+    'feature-travel-component': HTMLFeatureTravelComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'feature-travel-component': JSXElements.FeatureTravelComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface FeatureTravelComponentAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
   interface HTMLSiteFooterElement extends HTMLStencilElement {
 
   }
@@ -501,6 +690,33 @@ declare global {
   }
   namespace JSXElements {
     export interface SiteMenuAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLSiteMobileElement extends HTMLStencilElement {
+
+  }
+  var HTMLSiteMobileElement: {
+    prototype: HTMLSiteMobileElement;
+    new (): HTMLSiteMobileElement;
+  };
+  interface HTMLElementTagNameMap {
+    'site-mobile': HTMLSiteMobileElement;
+  }
+  interface ElementTagNameMap {
+    'site-mobile': HTMLSiteMobileElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'site-mobile': JSXElements.SiteMobileAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface SiteMobileAttributes extends HTMLAttributes {
 
     }
   }

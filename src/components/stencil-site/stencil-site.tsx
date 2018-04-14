@@ -1,32 +1,36 @@
 import "@ionic/core";
 
-import '@stencil/router';
-import { Component } from '@stencil/core';
+import "@stencil/router";
+import { Component } from "@stencil/core";
 
 @Component({
-  tag: 'stencil-site',
-  styleUrl: 'stencil-site.scss'
+  tag: "stencil-site",
+  styleUrl: "stencil-site.scss"
 })
 export class App {
   render() {
     return [
       <div id="main-div">
-
         <site-header />
-      
+
         <div class="app">
-      
           <stencil-router>
-
+            
             <stencil-route url="/" component="landing-page" exact={true} />
+            <stencil-route url="/mobile" component="site-mobile" exact={true} />
+            <stencil-route url="/features" component="site-features" exact={true} />
+            <stencil-route url="/features/testComponent" component="test-component" exact={true} />
+            <stencil-route url="/features/datePoll" component="feature-date-poll-component" exact={true} />
+            <stencil-route url="/features/games" component="feature-games-component" exact={true} />
+            <stencil-route url="/features/itinerary" component="feature-itinerary-component" exact={true} />
+            <stencil-route url="/features/notifications" component="feature-Notifications" exact={true} />
+            <stencil-route url="/features/scoreboards" component="feature-Scoreboards" exact={true} />
+            <stencil-route url="/features/tournaments" component="feature-tournaments-component" exact={true} />
+            <stencil-route url="/features/travel" component="feature-travel-component" exact={true} />
 
+            {/*Has a left menu*/}
             <stencil-route
-              url={[
-                "/docs",
-                "/demos",
-                "/resources",
-                "/pwa"
-              ]}
+              url={["/docs", "/demos", "/resources", "/pwa"]}
               routeRender={() => {
                 return (
                   <div class="wrapper">
@@ -39,29 +43,7 @@ export class App {
                         url="/docs/:pageName"
                         routeRender={(props: { [key: string]: any }) => {
                           const map = {
-                            'intro': 'intro/index.html',
-                            'browser-support': 'intro/browsers.html',
-                            'getting-started': 'start/index.html',
-                            'my-first-component': 'basics/my-first-component.html',
-                            'templating': 'basics/templating.html',
-                            'decorators': 'basics/decorators.html',
-                            'events': 'basics/events.html',
-                            'component-lifecycle': 'basics/component-lifecycle.html',
-                            'stencil-config': 'basics/stencil-config.html',
-                            'forms': 'basics/forms.html',
-                            'handling-arrays': 'basics/handling-arrays.html',
-                            'testing': 'basics/testing.html',
-                            'config': 'advanced/compiler/index.html',
-                            'server-side-rendering': 'advanced/ssr/index.html',
-                            'routing': 'addons/stencil-router.html',
-                            'sass': 'addons/stencil-sass.html',
-                            'service-workers': 'advanced/service-worker/index.html',
-                            'distribution': 'advanced/distribution/index.html',
-                            'framework-integration': 'advanced/framework-integration/index.html',
-                            'prerendering': 'advanced/pre-rendering/index.html',
-                            'shadow-dom': 'advanced/shadow-dom/index.html',
-                            'css-variables': 'advanced/css-variables/index.html',
-                            'context': 'advanced/context/index.html'
+                            intro: "intro/index.html"
                           };
                           return (
                             <document-component
@@ -70,20 +52,24 @@ export class App {
                           );
                         }}
                       />
-                      <stencil-route url="/resources" component="resources-page" />
+                      <stencil-route
+                        url="/resources"
+                        component="resources-page"
+                      />
                       <stencil-route url="/pwa" component="pwas-page" />
                     </div>
                   </div>
                 );
               }}
             />
-
           </stencil-router>
-          
-        </div>
-      </div>,
 
-      <site-footer/>
-     ];
+          {/*Footer*/}
+          <div class="footerSpacer" />
+          <site-footer />
+          <div class="footerSpacerBottom" />
+        </div>
+      </div>
+    ];
   }
 }

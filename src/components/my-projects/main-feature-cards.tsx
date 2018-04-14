@@ -11,25 +11,31 @@ export class MyProjects {
       title: "Who, When, Where",
       description:
         "Dates, invites, travel, round information, scoring, betting...  Just a few things Yagabu will help you with.",
-      tags: [ ["Date Poll", "/datePoll.html"], ["Itinerary", "/itinerary.html"], ["Travel","/travel.html"] ],
-      more: "https://github.com/Fdom92/Pantrify",
-      background: "/assets/img/FourCarts300x200.png",
+      tags: [ ["Date Poll", "/features/datePoll"], 
+              ["Itinerary", "/features/itinerary"], 
+              ["Travel","/features/travel"] ],
+      more: "https://yagabu.com",
+      background: "/assets/img/TeeOff300x200.png",
       alt: "carts"
     },
     {
       title: "Manage Games",
       description:
         "Club tournaments, weekly games, year long point races.  We can help manage it all, and provide an online scoreboard for your group to enjoy.",
-      tags: [ ["Tournaments", "/tournaments.html"], ["Games", "/games.html" ], ["Scoreboards", "/scorboards.html"] ],
-      more: "https://github.com/Fdom92/personal-web-site", 
+      tags: [ ["Tournaments", "/features/tournaments"], 
+              ["Games", "/features/games" ], 
+              ["Scoreboards", "/features/scoreboards"] ],
+      more: "https://yagabu.com", 
       background: "/assets/img/ScoreCardAndBall300x200.png", 
       alt: "carts"
     },
     {
       title: "Have More Fun",
       description: "Yagabu provides real-time updates before, during, and after your game. Everyone can share their antics as they happen.",
-      tags: [ ["Mobile", "/mobile.html"], ["Notifications", "/notifications.html"], ["Messaging","/messaging"] ],
-      more: "https://github.com/Fdom92/anidb",
+      tags: [ ["Mobile", "/features/mobile"], 
+              ["Notifications", "/features/notifications"], 
+              ["Messaging","/features/messaging"] ],
+      more: "https://yagabu.com",
       background: "/assets/img/BetsAndBooze300x200.png",
       alt: "carts"
     }
